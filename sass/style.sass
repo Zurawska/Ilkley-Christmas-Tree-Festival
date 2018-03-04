@@ -116,6 +116,25 @@ h1
     font-weight: lighter
     font-size: 32px
     padding-bottom: 50px
+    span
+        &::before
+            background-color: #000
+            content: ""
+            display: inline-block
+            height: 2px
+            position: relative
+            vertical-align: middle
+            width: 10%
+            right: 5px
+        &::after
+            background-color: #000
+            content: ""
+            display: inline-block
+            height: 2px
+            position: relative
+            vertical-align: middle
+            width: 10%
+            left: 5px
 h2
     font-size: 20px
 @media (min-width: 1200px)
