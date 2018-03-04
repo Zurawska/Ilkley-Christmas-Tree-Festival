@@ -1,0 +1,26 @@
+{
+  "name": "IlkleyChristmasTreeFestival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Grundfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zurawska/Ilkley-Christmas-Tree-Festival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zurawska/Ilkley-Christmas-Tree-Festival/issues"
+  },
+  "homepage": "https://github.com/Zurawska/Ilkley-Christmas-Tree-Festival#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0"
+  }
+}
