@@ -102,11 +102,11 @@ ul
     height: 100vh
     width: 100%
     text-align: center
-    background: url("../images/bg1-mobile.jpg") no-repeat top
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
+    // background: url("../images/bg1-mobile.jpg") no-repeat top
+    // -webkit-background-size: cover
+    // -moz-background-size: cover
+    // -o-background-size: cover
+    // background-size: cover
 .home-headers
     transform: translate(0, 25%)
     height: 100%
@@ -138,11 +138,56 @@ h1
 h2
     font-size: 20px
 @media (min-width: 1200px)
-    .home
-        background: url("../images/background1.jpg") no-repeat top
-        background-size: cover
+    // .home
+    //     background: url("../images/background1.jpg") no-repeat top
+    //     background-size: cover
     h1
         font-size: 48px
         padding-bottom: 80px
     .home-headers
         transform: translate(0, 40%)
+// SECTION INFO
+.info
+    padding: 0 10%
+    &::before
+        background-color: #000
+        content: ""
+        display: inline-block
+        height: 1px
+        position: relative
+        vertical-align: middle
+        width: 100%
+        margin-bottom: 70px
+    &::after
+        background-color: #000
+        content: ""
+        display: inline-block
+        height: 1px
+        position: relative
+        vertical-align: middle
+        width: 100%
+        margin-top: 50px
+.description
+    p
+        margin-bottom: 20px
+    span
+        font-weight: bold
+        color: $primary-color
+        font-size: 18px
+        font-family: 'Berkshire Swash', cursive
+        font-weight: lighter
+.christmas-tree
+    text-align: center
+    img
+        max-width: 100%
+@media (min-width: 1200px)
+    .info
+        display: flex
+        flex-flow: row wrap
+        align-items: center
+        justify-content: center
+        padding: 0 15%
+    .description
+        flex: 1
+    .christmas-tree
+        flex: 1
