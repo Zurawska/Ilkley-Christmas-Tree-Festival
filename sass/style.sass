@@ -7,6 +7,30 @@ body
     margin: 0
     box-sizing: border-box
     font-family: 'Source Sans Pro', sans-serif
+    background: url("../images/background_mobile.jpg") no-repeat top
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    width: 100%
+@media (min-width: 1200px)
+    body
+        background: url("../images/background.jpg") no-repeat top
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        width: 100%
+@media (max-width: 576px)
+    body
+        background: url("../images/bg_phones.jpg") no-repeat top
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        width: 100%
+p
+    line-height: 1.5
 $primary-color: #e31858
 $white-color: #ffff
 $light-blue-color: #eaf1f7
@@ -39,7 +63,7 @@ ul
     margin: 0
     li
         list-style: none
-        padding: 7px 14px
+        padding: 10px 14px
         a
             text-decoration: none
             width: 100%
@@ -100,13 +124,7 @@ ul
 // SECTION HOME
 .home
     height: 100vh
-    width: 100%
     text-align: center
-    // background: url("../images/bg1-mobile.jpg") no-repeat top
-    // -webkit-background-size: cover
-    // -moz-background-size: cover
-    // -o-background-size: cover
-    // background-size: cover
 .home-headers
     transform: translate(0, 25%)
     height: 100%
@@ -138,9 +156,6 @@ h1
 h2
     font-size: 20px
 @media (min-width: 1200px)
-    // .home
-    //     background: url("../images/background1.jpg") no-repeat top
-    //     background-size: cover
     h1
         font-size: 48px
         padding-bottom: 80px
@@ -171,7 +186,6 @@ h2
     p
         margin-bottom: 20px
     span
-        font-weight: bold
         color: $primary-color
         font-size: 18px
         font-family: 'Berkshire Swash', cursive
@@ -191,3 +205,65 @@ h2
         flex: 1
     .christmas-tree
         flex: 1
+// SECTION CONTACT
+.contact
+    text-align: center
+    padding: 0 10%
+    p
+        padding: 50px 0
+    span
+        font-weight: bold
+        color: $primary-color
+        font-size: 20px
+        font-family: 'Berkshire Swash', cursive
+        font-weight: lighter
+.media
+    text-align: center
+    flex-wrap: wrap
+    margin-bottom: 25%
+    i
+        background-color: $primary-color
+        color: $white-color
+        font-size: 25px
+        border-radius: 15%
+        width: 55px
+        height: 55px
+        line-height: 55px
+        margin: 30px 50px
+        transition: .3s
+    a
+        display: flex
+        -webkit-box-orient: vertical
+        -ms-flex-direction: column
+        flex-direction: column
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        text-decoration: none
+        color: #555
+        text-align: center
+@media (min-width: 1200px)
+    .media
+        width: 100%
+        display: flex
+        -webkit-box-orient: horizontal
+        -ms-flex-direction: row
+        flex-direction: row
+        justify-content: center
+        margin-bottom: 10%
+        i
+            &:hover
+                border-radius: 50%
+    .contact
+        padding: 0 15%
+// FOOTER
+footer
+    text-align: center
+    padding: 20px
+    p
+        font-size: 14px
+    img
+        width: 20px
