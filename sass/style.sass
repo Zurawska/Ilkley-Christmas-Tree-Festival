@@ -32,7 +32,7 @@ body
 p
     line-height: 1.5
 $primary-color: #e31858
-$white-color: #ffff
+$white-color: #ffffff
 $light-blue-color: #eaf1f7
 $black-color: #161616
 // HEADER
@@ -160,7 +160,6 @@ h2
         color: $primary-color
         font-family: 'Berkshire Swash', cursive
         font-weight: lighter
-
 @media (min-width: 1200px)
     h1
         font-size: 48px
@@ -216,12 +215,52 @@ h2
         flex: 1
     .christmas-tree
         flex: 1
+// SECTION PROGRAM
+.program
+    padding: 0 10%
+    &::after
+        background-color: #000
+        content: ""
+        display: inline-block
+        height: 1px
+        position: relative
+        vertical-align: middle
+        width: 100%
+        margin-top: 50px
+    h2
+      text-align: center
+      padding: 15% 0 10%
+    h3
+      padding: 10px 0
+    h5
+      text-align: center
+      padding: 10% 0 0
+      font-size: 16px
+    a
+      color: #555
+      font-style: italic
+    ul
+      padding-left: 20px
+      li
+        display: block
+      span
+        font-weight: bold
+@media (min-width: 1200px)
+  .program
+    padding: 0 15%
+    h2
+      text-align: center
+      padding: 5% 0
+    h5
+      padding: 3% 0 0
 // SECTION CONTACT
 .contact
     text-align: center
     padding: 0 10%
     h3
         padding: 50px 0
+    h2
+        padding: 5% 0
 .media
     text-align: center
     flex-wrap: wrap
@@ -250,6 +289,7 @@ h2
         text-decoration: none
         color: #555
         text-align: center
+        font-style: italic
 @media (min-width: 1200px)
     .media
         width: 100%
