@@ -228,9 +228,10 @@ h2
         margin-top: 50px
     h2
         text-align: center
-        padding: 15% 0 10%
+        padding: 20% 0 0
     h3
         padding: 10px 0
+        margin-top: 50px
     h5
         text-align: center
         padding: 10% 0 0
@@ -249,9 +250,38 @@ h2
         padding: 0 15%
         h2
             text-align: center
-            padding: 5% 0
+            padding: 10% 0 2%
         h5
             padding: 3% 0 0
+// SECTION ORGANISATIONS
+.organisations
+    padding: 0 10%
+    &::after
+        background-color: #000
+        content: ""
+        display: inline-block
+        height: 1px
+        position: relative
+        vertical-align: middle
+        width: 100%
+        margin-top: 50px
+    h2
+        text-align: center
+        padding: 20% 0 10%
+    h3
+        text-align: center
+        padding-bottom: 5%
+    ol
+        padding-left: 10%
+        li
+            margin: 15px 0
+@media (min-width: 1200px)
+    .organisations
+        padding: 0 15%
+        h2
+            padding: 5% 0
+        ol
+            padding-left: 15px
 // SECTION CONTACT
 .contact
     text-align: center
